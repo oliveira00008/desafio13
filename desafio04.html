@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela final</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+
+        table{
+            width: 700px;
+            height: 400px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            color: black;
+            background-color: white;  
+
+        }
+
+        thead{
+            background-color: darkgrey; 
+           
+           
+        }
+
+        tr,th,td {
+            border: 1px solid black;
+        }
+
+        .n{
+            background-color: darkgrey;   
+        }
+        .w{
+            background-color: white;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>desafio de tabela final</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Diciplina</th>
+                <th colspan="2" scope="colgroup">Nota</th>
+                <th rowspan="2" scope="col">Media</th>   
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="5" scope="rowgroup">Extra</th>   
+            </tr>
+            <tr>
+                <td>Matematica</td>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>7.0</td>
+            </tr> 
+            <tr>
+                <td>Fisica</td>
+                <td>5.0</td>
+                <td>8.0</td>
+                <td>10.0</td>
+            </tr>  
+            <tr>
+                <td>Quimica</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>9.0</td>
+            </tr> 
+            <tr>
+                <td>Biologia</td>
+                <td>9.0</td>
+                <td>5.0</td>
+                <td>6.0</td>
+            </tr>
+            <tr class="n">
+                <th colspan="4" scope="row">Media de extra</th>
+                <td>10.0</td>
+            </tr>   
+            <tr>
+                <th rowspan="3" scope="rowgroup">humanas</th>
+            </tr> 
+            <tr>
+                <td>Historia</td>
+                <td>8.0</td>
+                <td>7.0</td>
+                <td>4.0</td>
+            </tr>    
+            <tr>
+                <td>Geografia</td>
+                <td>3.0</td>
+                <td>7.0</td>
+                <td>6.0</td>
+            </tr>
+            <tr class="n">
+                <th colspan="4" scope="row">Media Humanas</th>
+                <td class="w">8.9</td>  
+            </tr>
+                        
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
